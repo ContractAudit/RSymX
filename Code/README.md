@@ -1,6 +1,6 @@
 # RSymX, an assemble strategies guided symbolic execution for Ethereum smart contracts
 
-<img src="./rsymx.png" alt="Logo" align="left" width="300"/>
+<img src="./rsymx.png" alt="Logo" align="left" width="200"/>
 
 SymX, a novel symbolic execution method, and its dynamic optimized version RSymX, the first art of assemble strategies guided symbolic execution for contracts. RSymX is proposed to address three challenges: (i) Identify contract defective code snippets, while generating vulnerable call sequences against the state explosion caused by contract characteristics such as cross-contract calls and loop branches. (ii) Monitor abnormal call behaviors, especially for multiple continuous transactions. (iii) Validate numerous unexploitable detection results automatically because manual verification is labor-intensive. 
 
@@ -31,7 +31,7 @@ Num | Detector | What it Detects | Impact | Confidence | Severity
 11 | `tx-origin` | Check the dangerous use of tx.origin | Medium | probably | Medium
 12 | `unchecked-send` | Check unreviewed send | Medium | probably | Medium
 13 | `timestamp` | The dangerous use of block.timestamp | Low | probably | Low
-14 `block-other-parameters` | Hazardous use variables (block.number etc.) | Low | probably | Low
+14 | `block-other-parameters` | Hazardous use variables (block.number etc.) | Low | probably | Low
 15 | `low-level-calls` | Check low-level calls | Info | exactly | Info
 16 | `msgvalue-equals-zero` | The judgment of msg.value and zero.| Info | exactly | Info
 17 | `send-transfer` | Check Transfe to replace Send | Opt | exactly | Opt
