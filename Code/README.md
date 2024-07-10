@@ -42,7 +42,7 @@ Num | Detector | What it Detects | Impact | Confidence | Severity
 ### Using Docker (Suggested)
 
 ```bash
-docker pull 
+docker pull scripthub/rsymx-master:v1
 ```
 
 ### Using Git
@@ -54,6 +54,7 @@ git clone https://github.com/SmartContract/RSymX.git && cd rsymx-master
 Note that the solc-select will use the solc bin files in the /home/user/.solc-select (if user) or /root/.solc-select (if root user), so we need to unzip the solc files to that path by executing the following command.
 
 ```bash
+tar -zcvf sourcecodes.part01.rar rsymx
 unzip -d /home/user .solc-select.zip
 cd /home/user/.solc-select/bin
 rm solc-default
